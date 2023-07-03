@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "581798469216",
+    "project_id": "goodmoon1-63946",
+    "storage_bucket": "goodmoon1-63946.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:581798469216:android:5e006ccc288f5e07832d05",
+        "android_client_info": {
+          "package_name": "com.alvish.spotifyredesign"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "581798469216-63letmd6queq723158mit9rja03mrser.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtzWPaPbjS3qYL1beN52nGH38NSAKL6Gc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "581798469216-63letmd6queq723158mit9rja03mrser.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "581798469216-n3dndoeh9dt6j0icobr4cn3hqo7bcavj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.alvish.spotifyredesign"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
