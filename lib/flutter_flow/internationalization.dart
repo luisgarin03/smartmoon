@@ -108,16 +108,6 @@ Locale createLocale(String language) => language.contains('_')
 final kTranslationsMap = <Map<String, Map<String, String>>>[
   // getStartedPage
   {
-    '2tw8suus': {
-      'en': '\nGet Started',
-      'es': '',
-      'fr': '',
-    },
-    '0m83uv0t': {
-      'en': 'Get Started',
-      'es': '',
-      'fr': '',
-    },
     'hgxnooi5': {
       'en': 'Sleep better, live better',
       'es': '',
@@ -125,6 +115,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'nx9qmvmb': {
       'en': 'Select Language',
+      'es': '',
+      'fr': '',
+    },
+    'wje7alti': {
+      'en': 'Get Started',
       'es': '',
       'fr': '',
     },
@@ -136,6 +131,16 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // registerOrSignInPage
   {
+    'btd0kfmb': {
+      'en': 'Register',
+      'es': '',
+      'fr': '',
+    },
+    'an9ppgzi': {
+      'en': 'Sign in',
+      'es': '',
+      'fr': '',
+    },
     'v233z49r': {
       'en': 'Home',
       'es': '',
@@ -288,6 +293,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
       'fr': '',
     },
+    'nyk105cl': {
+      'en': 'Hello World',
+      'es': '',
+      'fr': '',
+    },
     'nhl3sews': {
       'en': '2:25',
       'es': '',
@@ -347,6 +357,27 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'fr': '',
     },
   },
+  // mainPageCopy
+  {
+    '3ejr30ao': {
+      'en': 'Home',
+      'es': '',
+      'fr': '',
+    },
+  },
+  // music
+  {
+    'hjebb4gl': {
+      'en': 'name',
+      'es': '',
+      'fr': '',
+    },
+    'c3027a0r': {
+      'en': 'Home',
+      'es': '',
+      'fr': '',
+    },
+  },
   // ProfilePage
   {
     'ugof5x73': {
@@ -389,8 +420,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
       'fr': '',
     },
-    'ph5hh7bz': {
-      'en': 'Wrap 2022',
+    'zp0yfjmf': {
+      'en': 'Hello World',
       'es': '',
       'fr': '',
     },
@@ -491,159 +522,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'ywn49fr1': {
       'en': '35:47',
-      'es': '',
-      'fr': '',
-    },
-  },
-  // HomePage
-  {
-    '7grx8kbj': {
-      'en': 'New Song',
-      'es': '',
-      'fr': '',
-    },
-    '2dfjo0nc': {
-      'en': 'F64',
-      'es': '',
-      'fr': '',
-    },
-    '8jxrig4q': {
-      'en': 'Ed Sheeran',
-      'es': '',
-      'fr': '',
-    },
-    '988l9f7l': {
-      'en': 'Hello World',
-      'es': '',
-      'fr': '',
-    },
-    'qivfalfi': {
-      'en': 'Albums',
-      'es': '',
-      'fr': '',
-    },
-    'pln6tnao': {
-      'en': 'Artists',
-      'es': '',
-      'fr': '',
-    },
-    'd6bnfnyc': {
-      'en': 'Podcasts',
-      'es': '',
-      'fr': '',
-    },
-    'nnym737u': {
-      'en': 'Playlists',
-      'es': '',
-      'fr': '',
-    },
-    'p63aihyo': {
-      'en': 'If I Can Dream',
-      'es': '',
-      'fr': '',
-    },
-    'lzznz5ux': {
-      'en': 'Elvis Presely',
-      'es': '',
-      'fr': '',
-    },
-    'bdge4nmz': {
-      'en': 'Love Yourself',
-      'es': '',
-      'fr': '',
-    },
-    'p1gqigra': {
-      'en': 'Justin Bieber',
-      'es': '',
-      'fr': '',
-    },
-    'dndl4ee4': {
-      'en': 'Fix You',
-      'es': '',
-      'fr': '',
-    },
-    'dpd4aerc': {
-      'en': 'Coldplay',
-      'es': '',
-      'fr': '',
-    },
-    'gxzwuwvn': {
-      'en': 'As It Was',
-      'es': '',
-      'fr': '',
-    },
-    '0vcblwsp': {
-      'en': 'Harry Styles',
-      'es': '',
-      'fr': '',
-    },
-    'jm9445b6': {
-      'en': 'Albums',
-      'es': '',
-      'fr': '',
-    },
-    '99k6hyk0': {
-      'en': 'See More',
-      'es': '',
-      'fr': '',
-    },
-    'on8cy7us': {
-      'en': 'Elvis 30 #1 Hits',
-      'es': '',
-      'fr': '',
-    },
-    '1iambqa3': {
-      'en': 'Elvis Presely',
-      'es': '',
-      'fr': '',
-    },
-    'qjclos1a': {
-      'en': '1:18:00',
-      'es': '',
-      'fr': '',
-    },
-    'rrv8xchs': {
-      'en': 'Fine Line',
-      'es': '',
-      'fr': '',
-    },
-    'xrbxf5nj': {
-      'en': 'Harry Styles',
-      'es': '',
-      'fr': '',
-    },
-    'sorg56u6': {
-      'en': '46:43',
-      'es': '',
-      'fr': '',
-    },
-    '4ifwapi7': {
-      'en': 'FOUR (Deluxe)',
-      'es': '',
-      'fr': '',
-    },
-    '4gy7wswa': {
-      'en': 'One Direction',
-      'es': '',
-      'fr': '',
-    },
-    '67v5ppq4': {
-      'en': '57:15',
-      'es': '',
-      'fr': '',
-    },
-    'mffgqtpg': {
-      'en': 'V (Asis Tour)',
-      'es': '',
-      'fr': '',
-    },
-    'y7eb3apf': {
-      'en': 'Maroon 5',
-      'es': '',
-      'fr': '',
-    },
-    'giwx9cec': {
-      'en': '1:18:00',
       'es': '',
       'fr': '',
     },
@@ -782,9 +660,22 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'fr': '',
     },
   },
+  // UIActionBar1
+  {
+    'se9q3zs6': {
+      'en': 'Gadgets and more..',
+      'es': '',
+      'fr': '',
+    },
+    'juyo5dr3': {
+      'en': 'Shop',
+      'es': '',
+      'fr': '',
+    },
+  },
   // Miscellaneous
   {
-    't3j0tq11': {
+    '70syh2v7': {
       'en': 'Button',
       'es': '',
       'fr': '',

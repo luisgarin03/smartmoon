@@ -1,7 +1,8 @@
 import '/components/bottom_nav_bar/bottom_nav_bar_widget.dart';
-import '/components/home_page/home_page_widget.dart';
+import '/flutter_flow/flutter_flow_audio_player.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/pages/home_page/home_page_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -65,6 +66,24 @@ class _MainPageWidgetState extends State<MainPageWidget> {
                     updateCallback: () => setState(() {}),
                     child: BottomNavBarWidget(),
                   ),
+                ),
+                FlutterFlowAudioPlayer(
+                  audio: Audio.network(
+                    'gs://goodmoon1-63946.appspot.com/Aether goddes/Aether Goddes.mp3',
+                    metas: Metas(
+                      id: 'Aether_Goddes.mp3-02bb0aeb',
+                      title: 'god',
+                    ),
+                  ),
+                  titleTextStyle: FlutterFlowTheme.of(context).titleLarge,
+                  playbackDurationTextStyle:
+                      FlutterFlowTheme.of(context).labelMedium,
+                  fillColor: FlutterFlowTheme.of(context).secondaryBackground,
+                  playbackButtonColor: FlutterFlowTheme.of(context).primary,
+                  activeTrackColor: FlutterFlowTheme.of(context).alternate,
+                  elevation: 4.0,
+                  playInBackground:
+                      PlayInBackground.disabledRestoreOnForeground,
                 ),
               ],
             ),

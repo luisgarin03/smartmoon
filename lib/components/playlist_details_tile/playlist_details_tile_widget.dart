@@ -82,21 +82,11 @@ class _PlaylistDetailsTileWidgetState extends State<PlaylistDetailsTileWidget> {
                 children: [
                   Text(
                     widget.playlistName!,
-                    style: GoogleFonts.getFont(
-                      'Satoshi',
-                      color: FlutterFlowTheme.of(context).d6d6d6,
-                      fontWeight: FontWeight.w500,
-                      fontSize: 16.0,
-                    ),
+                    style: FlutterFlowTheme.of(context).labelMedium,
                   ),
                   Text(
                     widget.subtitle!,
-                    style: GoogleFonts.getFont(
-                      'Satoshi',
-                      color: FlutterFlowTheme.of(context).d6d6d6,
-                      fontWeight: FontWeight.w300,
-                      fontSize: 12.0,
-                    ),
+                    style: FlutterFlowTheme.of(context).labelMedium,
                   ),
                 ],
               ),
@@ -107,7 +97,7 @@ class _PlaylistDetailsTileWidgetState extends State<PlaylistDetailsTileWidget> {
             children: [
               Text(
                 widget.duration!,
-                style: FlutterFlowTheme.of(context).bodyMedium,
+                style: FlutterFlowTheme.of(context).labelMedium,
               ),
               Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(37.0, 0.0, 0.0, 0.0),

@@ -3,6 +3,7 @@ import '/flutter_flow/flutter_flow_language_selector.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/pages/register_or_sign_in_page/register_or_sign_in_page_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -79,6 +80,16 @@ class _GetStartedPageWidgetState extends State<GetStartedPageWidget>
                 ),
               ),
               Align(
+                alignment: AlignmentDirectional(-0.78, -0.01),
+                child: Container(
+                  width: double.infinity,
+                  height: 70.0,
+                  decoration: BoxDecoration(
+                    color: Color(0x18616161),
+                  ),
+                ),
+              ),
+              Align(
                 alignment: AlignmentDirectional(0.0, -1.0),
                 child: Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
@@ -89,97 +100,6 @@ class _GetStartedPageWidgetState extends State<GetStartedPageWidget>
                       width: 300.0,
                       height: 100.0,
                       fit: BoxFit.contain,
-                    ),
-                  ),
-                ),
-              ),
-              Align(
-                alignment: AlignmentDirectional(0.0, 0.8),
-                child: Container(
-                  width: 200.0,
-                  height: 50.0,
-                  decoration: BoxDecoration(
-                    boxShadow: [
-                      BoxShadow(
-                        blurRadius: 4.0,
-                        color: Color(0x7080FFFF),
-                        offset: Offset(0.0, 4.0),
-                      )
-                    ],
-                    gradient: LinearGradient(
-                      colors: [Color(0x482BE4E7), Color(0x550011FF)],
-                      stops: [0.0, 1.0],
-                      begin: AlignmentDirectional(0.0, -1.0),
-                      end: AlignmentDirectional(0, 1.0),
-                    ),
-                    borderRadius: BorderRadius.circular(2.0),
-                    shape: BoxShape.rectangle,
-                  ),
-                  child: Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
-                    child: Container(
-                      width: 200.0,
-                      child: Stack(
-                        children: [
-                          Align(
-                            alignment: AlignmentDirectional(-0.09, 0.67),
-                            child: FFButtonWidget(
-                              onPressed: () async {},
-                              text: FFLocalizations.of(context).getText(
-                                '2tw8suus' /* 
-Get Started */
-                                ,
-                              ),
-                              options: FFButtonOptions(
-                                width: 324.0,
-                                height: 40.0,
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 0.0, 0.0, 0.0),
-                                iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 0.0, 0.0, 0.0),
-                                color: Color(0x00FF0000),
-                                textStyle: FlutterFlowTheme.of(context)
-                                    .bodyMedium
-                                    .override(
-                                      fontFamily: 'Meta font ',
-                                      fontWeight: FontWeight.w600,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily),
-                                    ),
-                                elevation: 3.0,
-                                borderSide: BorderSide(
-                                  color: Colors.transparent,
-                                  width: 1.0,
-                                ),
-                                borderRadius: BorderRadius.circular(8.0),
-                                hoverColor: Colors.black,
-                              ),
-                            ),
-                          ),
-                          Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
-                            child: Text(
-                              FFLocalizations.of(context).getText(
-                                '0m83uv0t' /* Get Started */,
-                              ),
-                              style: FlutterFlowTheme.of(context)
-                                  .labelMedium
-                                  .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .labelMediumFamily,
-                                    fontSize: 16.0,
-                                    fontWeight: FontWeight.w500,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .labelMediumFamily),
-                                  ),
-                            ),
-                          ),
-                        ],
-                      ),
                     ),
                   ),
                 ),
@@ -245,6 +165,45 @@ Get Started */
                     width: 30.0,
                     height: 30.0,
                     fit: BoxFit.contain,
+                  ),
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(0.0, 0.73),
+                child: FFButtonWidget(
+                  onPressed: () async {
+                    Navigator.push(
+                      context,
+                      PageTransition(
+                        type: PageTransitionType.rightToLeft,
+                        duration: Duration(milliseconds: 300),
+                        reverseDuration: Duration(milliseconds: 300),
+                        child: RegisterOrSignInPageWidget(),
+                      ),
+                    );
+                  },
+                  text: FFLocalizations.of(context).getText(
+                    'wje7alti' /* Get Started */,
+                  ),
+                  options: FFButtonOptions(
+                    height: 40.0,
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                    iconPadding:
+                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    color: Color(0x1FC6C6C6),
+                    textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                          fontFamily: 'Meta font ',
+                          color: Colors.white,
+                          useGoogleFonts: GoogleFonts.asMap().containsKey(
+                              FlutterFlowTheme.of(context).titleSmallFamily),
+                        ),
+                    elevation: 3.0,
+                    borderSide: BorderSide(
+                      color: Colors.transparent,
+                      width: 1.0,
+                    ),
+                    borderRadius: BorderRadius.circular(8.0),
                   ),
                 ),
               ),

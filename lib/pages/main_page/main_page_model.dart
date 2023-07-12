@@ -1,7 +1,8 @@
 import '/components/bottom_nav_bar/bottom_nav_bar_widget.dart';
-import '/components/home_page/home_page_widget.dart';
+import '/flutter_flow/flutter_flow_audio_player.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/pages/home_page/home_page_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';

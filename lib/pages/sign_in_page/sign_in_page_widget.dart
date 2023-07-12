@@ -271,8 +271,8 @@ class _SignInPageWidgetState extends State<SignInPageWidget>
                       '5qri76dn' /* Sign In */,
                     ),
                     textAlign: TextAlign.start,
-                    style: GoogleFonts.getFont(
-                      'Satoshi',
+                    style: TextStyle(
+                      fontFamily: 'Meta font ',
                       color: FlutterFlowTheme.of(context).f2f2f2,
                       fontWeight: FontWeight.w500,
                       fontSize: 30.0,
@@ -290,8 +290,8 @@ class _SignInPageWidgetState extends State<SignInPageWidget>
                         FFLocalizations.of(context).getText(
                           'pceqmvx1' /* If You Need Any Support */,
                         ),
-                        style: GoogleFonts.getFont(
-                          'Satoshi',
+                        style: TextStyle(
+                          fontFamily: 'Meta font ',
                           color: FlutterFlowTheme.of(context).e1e1e1,
                           fontWeight: FontWeight.w300,
                           fontSize: 12.0,
@@ -349,8 +349,8 @@ class _SignInPageWidgetState extends State<SignInPageWidget>
                               hintText: FFLocalizations.of(context).getText(
                                 'ox7jcpoo' /* Enter Username Or Email */,
                               ),
-                              hintStyle: GoogleFonts.getFont(
-                                'Satoshi',
+                              hintStyle: TextStyle(
+                                fontFamily: 'Meta font ',
                                 color: Color(0x9AA7A7A7),
                                 fontWeight: FontWeight.w500,
                                 fontSize: 16.0,
@@ -360,8 +360,8 @@ class _SignInPageWidgetState extends State<SignInPageWidget>
                               errorBorder: InputBorder.none,
                               focusedErrorBorder: InputBorder.none,
                             ),
-                            style: GoogleFonts.getFont(
-                              'Satoshi',
+                            style: TextStyle(
+                              fontFamily: 'Meta font ',
                               color: FlutterFlowTheme.of(context).hintColor,
                               fontWeight: FontWeight.bold,
                               fontSize: 16.0,
@@ -413,8 +413,8 @@ class _SignInPageWidgetState extends State<SignInPageWidget>
                               hintText: FFLocalizations.of(context).getText(
                                 '3bxz235o' /* Password */,
                               ),
-                              hintStyle: GoogleFonts.getFont(
-                                'Satoshi',
+                              hintStyle: TextStyle(
+                                fontFamily: 'Meta font ',
                                 color: Color(0x99A7A7A7),
                                 fontWeight: FontWeight.w500,
                                 fontSize: 16.0,
@@ -424,8 +424,8 @@ class _SignInPageWidgetState extends State<SignInPageWidget>
                               errorBorder: InputBorder.none,
                               focusedErrorBorder: InputBorder.none,
                             ),
-                            style: GoogleFonts.getFont(
-                              'Satoshi',
+                            style: TextStyle(
+                              fontFamily: 'Meta font ',
                               color: FlutterFlowTheme.of(context).hintColor,
                               fontWeight: FontWeight.bold,
                               fontSize: 16.0,
@@ -487,8 +487,8 @@ class _SignInPageWidgetState extends State<SignInPageWidget>
                       iconPadding:
                           EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: FlutterFlowTheme.of(context).primary,
-                      textStyle: GoogleFonts.getFont(
-                        'Satoshi',
+                      textStyle: TextStyle(
+                        fontFamily: 'Meta font ',
                         color: FlutterFlowTheme.of(context).f6f6f6,
                         fontWeight: FontWeight.w500,
                         fontSize: 22.0,
@@ -618,8 +618,8 @@ class _SignInPageWidgetState extends State<SignInPageWidget>
                         FFLocalizations.of(context).getText(
                           'kd99nt0u' /* Not A Member ? */,
                         ),
-                        style: GoogleFonts.getFont(
-                          'Satoshi',
+                        style: TextStyle(
+                          fontFamily: 'Meta font ',
                           color: FlutterFlowTheme.of(context).dbdbdb,
                           fontWeight: FontWeight.w500,
                           fontSize: 14.0,

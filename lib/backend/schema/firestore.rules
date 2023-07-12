@@ -14,5 +14,36 @@ service cloud.firestore {
       allow write: if request.auth.uid == document;
       allow delete: if false;
     }
+
+    match /music/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /gmmusic/{parent}/song/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/song/{document} {
+      allow read: if true;
+    }
+
+
+    match /gmmusic/{parent}/track/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/track/{document} {
+      allow read: if true;
+    }
+
   }
 }

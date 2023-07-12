@@ -196,8 +196,8 @@ class _SongLyricsPageWidgetState extends State<SongLyricsPageWidget>
                               ),
                               Text(
                                 widget.songName!,
-                                style: GoogleFonts.getFont(
-                                  'Satoshi',
+                                style: TextStyle(
+                                  fontFamily: 'Meta font ',
                                   color: FlutterFlowTheme.of(context).dddddd,
                                   fontWeight: FontWeight.w500,
                                   fontSize: 18.0,
@@ -224,8 +224,8 @@ class _SongLyricsPageWidgetState extends State<SongLyricsPageWidget>
                               'sdsokfu6' /* Well, I found a woman, stronge... */,
                             ),
                             textAlign: TextAlign.start,
-                            style: GoogleFonts.getFont(
-                              'Satoshi',
+                            style: TextStyle(
+                              fontFamily: 'Meta font ',
                               color: Color(0x80FFFFFF),
                               fontWeight: FontWeight.w500,
                               fontSize: 16.0,
@@ -244,8 +244,8 @@ class _SongLyricsPageWidgetState extends State<SongLyricsPageWidget>
                               'ix8vyozq' /* We are still kids, but we're s... */,
                             ),
                             textAlign: TextAlign.start,
-                            style: GoogleFonts.getFont(
-                              'Satoshi',
+                            style: TextStyle(
+                              fontFamily: 'Meta font ',
                               color: FlutterFlowTheme.of(context).primaryText,
                               fontWeight: FontWeight.w500,
                               fontSize: 20.0,
@@ -264,8 +264,8 @@ class _SongLyricsPageWidgetState extends State<SongLyricsPageWidget>
                               'igudgueu' /* Fighting against all odds I kn... */,
                             ),
                             textAlign: TextAlign.start,
-                            style: GoogleFonts.getFont(
-                              'Satoshi',
+                            style: TextStyle(
+                              fontFamily: 'Meta font ',
                               color: Color(0x80FFFFFF),
                               fontWeight: FontWeight.w500,
                               fontSize: 16.0,
@@ -324,8 +324,8 @@ class _SongLyricsPageWidgetState extends State<SongLyricsPageWidget>
                                     children: [
                                       Text(
                                         widget.songName!,
-                                        style: GoogleFonts.getFont(
-                                          'Satoshi',
+                                        style: TextStyle(
+                                          fontFamily: 'Meta font ',
                                           color: FlutterFlowTheme.of(context)
                                               .cbcbcb,
                                           fontWeight: FontWeight.w500,
@@ -334,8 +334,8 @@ class _SongLyricsPageWidgetState extends State<SongLyricsPageWidget>
                                       ),
                                       Text(
                                         widget.artistName!,
-                                        style: GoogleFonts.getFont(
-                                          'Satoshi',
+                                        style: TextStyle(
+                                          fontFamily: 'Meta font ',
                                           color: FlutterFlowTheme.of(context)
                                               .c939393,
                                           fontWeight: FontWeight.w300,
@@ -434,6 +434,7 @@ class _SongLyricsPageWidgetState extends State<SongLyricsPageWidget>
                                   'us1575ix' /* 4:02 */,
                                 ),
                                 style: TextStyle(
+                                  fontFamily: 'Meta font ',
                                   color: FlutterFlowTheme.of(context).c878787,
                                   fontWeight: FontWeight.w500,
                                   fontSize: 12.0,

@@ -12,3 +12,6 @@ export '/pages/song_lyrics_page/song_lyrics_page_widget.dart'
     show SongLyricsPageWidget;
 export '/pages/user_profile_page/user_profile_page_widget.dart'
     show UserProfilePageWidget;
+export '/pages/main_page_copy/main_page_copy_widget.dart'
+    show MainPageCopyWidget;
+export '/music/music_widget.dart' show MusicWidget;

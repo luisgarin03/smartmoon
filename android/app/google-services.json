@@ -7,14 +7,22 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:581798469216:android:5e006ccc288f5e07832d05",
+        "mobilesdk_app_id": "1:581798469216:android:069eb1672f575b73832d05",
         "android_client_info": {
-          "package_name": "com.alvish.spotifyredesign"
+          "package_name": "smartmoon.com"
         }
       },
       "oauth_client": [
         {
-          "client_id": "581798469216-63letmd6queq723158mit9rja03mrser.apps.googleusercontent.com",
+          "client_id": "581798469216-dv1i63ftnd704pkef339dljnfisncmrd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "smartmoon.com",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "581798469216-rnl39i636rnhdjc564bgnts0nobudr9s.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -31,10 +39,10 @@
               "client_type": 3
             },
             {
-              "client_id": "581798469216-n3dndoeh9dt6j0icobr4cn3hqo7bcavj.apps.googleusercontent.com",
+              "client_id": "581798469216-a1nau2eem536hb1u4esmf0drp2ikluef.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.alvish.spotifyredesign"
+                "bundle_id": "smartmoon.com"
               }
             }
           ]

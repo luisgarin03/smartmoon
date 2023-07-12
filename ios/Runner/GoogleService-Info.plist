@@ -3,9 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>581798469216-n3dndoeh9dt6j0icobr4cn3hqo7bcavj.apps.googleusercontent.com</string>
+	<string>581798469216-a1nau2eem536hb1u4esmf0drp2ikluef.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.581798469216-n3dndoeh9dt6j0icobr4cn3hqo7bcavj</string>
+	<string>com.googleusercontent.apps.581798469216-a1nau2eem536hb1u4esmf0drp2ikluef</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>581798469216-dv1i63ftnd704pkef339dljnfisncmrd.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
 	<string>AIzaSyAl8tW4OCa1aW0MYzx6ACH1muID9k5HUs4</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +15,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.alvish.spotifyredesign</string>
+	<string>smartmoon.com</string>
 	<key>PROJECT_ID</key>
 	<string>goodmoon1-63946</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,6 +31,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:581798469216:ios:9c69c68340928249832d05</string>
+	<string>1:581798469216:ios:2f9891ee0ee1acd4832d05</string>
 </dict>
 </plist>

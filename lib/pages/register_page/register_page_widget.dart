@@ -291,8 +291,8 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget>
                       't87th426' /* Register */,
                     ),
                     textAlign: TextAlign.start,
-                    style: GoogleFonts.getFont(
-                      'Satoshi',
+                    style: TextStyle(
+                      fontFamily: 'Meta font ',
                       color: FlutterFlowTheme.of(context).f2f2f2,
                       fontWeight: FontWeight.w500,
                       fontSize: 30.0,
@@ -373,8 +373,8 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget>
                               hintText: FFLocalizations.of(context).getText(
                                 'c9pakyhw' /* Full Name */,
                               ),
-                              hintStyle: GoogleFonts.getFont(
-                                'Satoshi',
+                              hintStyle: TextStyle(
+                                fontFamily: 'Meta font ',
                                 color: Color(0x9AA7A7A7),
                                 fontWeight: FontWeight.w500,
                                 fontSize: 16.0,
@@ -384,8 +384,8 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget>
                               errorBorder: InputBorder.none,
                               focusedErrorBorder: InputBorder.none,
                             ),
-                            style: GoogleFonts.getFont(
-                              'Satoshi',
+                            style: TextStyle(
+                              fontFamily: 'Meta font ',
                               color: FlutterFlowTheme.of(context).hintColor,
                               fontWeight: FontWeight.bold,
                               fontSize: 16.0,
@@ -437,8 +437,8 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget>
                               hintText: FFLocalizations.of(context).getText(
                                 '74zhkkdl' /* Enter Email */,
                               ),
-                              hintStyle: GoogleFonts.getFont(
-                                'Satoshi',
+                              hintStyle: TextStyle(
+                                fontFamily: 'Meta font ',
                                 color: Color(0x9AA7A7A7),
                                 fontWeight: FontWeight.w500,
                                 fontSize: 16.0,
@@ -448,8 +448,8 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget>
                               errorBorder: InputBorder.none,
                               focusedErrorBorder: InputBorder.none,
                             ),
-                            style: GoogleFonts.getFont(
-                              'Satoshi',
+                            style: TextStyle(
+                              fontFamily: 'Meta font ',
                               color: FlutterFlowTheme.of(context).hintColor,
                               fontWeight: FontWeight.bold,
                               fontSize: 16.0,
@@ -502,8 +502,8 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget>
                               hintText: FFLocalizations.of(context).getText(
                                 'a2ikc8h7' /* Password */,
                               ),
-                              hintStyle: GoogleFonts.getFont(
-                                'Satoshi',
+                              hintStyle: TextStyle(
+                                fontFamily: 'Meta font ',
                                 color: Color(0x99A7A7A7),
                                 fontWeight: FontWeight.w500,
                                 fontSize: 16.0,
@@ -513,8 +513,8 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget>
                               errorBorder: InputBorder.none,
                               focusedErrorBorder: InputBorder.none,
                             ),
-                            style: GoogleFonts.getFont(
-                              'Satoshi',
+                            style: TextStyle(
+                              fontFamily: 'Meta font ',
                               color: FlutterFlowTheme.of(context).hintColor,
                               fontWeight: FontWeight.bold,
                               fontSize: 16.0,
@@ -707,8 +707,8 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget>
                         FFLocalizations.of(context).getText(
                           'q0rvcenu' /* Do You Have An Account ? */,
                         ),
-                        style: GoogleFonts.getFont(
-                          'Satoshi',
+                        style: TextStyle(
+                          fontFamily: 'Meta font ',
                           color: FlutterFlowTheme.of(context).dbdbdb,
                           fontWeight: FontWeight.w500,
                           fontSize: 14.0,
@@ -754,7 +754,9 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget>
                         Align(
                           alignment: AlignmentDirectional(-0.09, 0.67),
                           child: FFButtonWidget(
-                            onPressed: () async {},
+                            onPressed: () {
+                              print('Button pressed ...');
+                            },
                             text: FFLocalizations.of(context).getText(
                               'onfwna0b' /* 
 Get Started */

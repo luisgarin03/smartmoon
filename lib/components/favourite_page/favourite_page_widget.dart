@@ -302,8 +302,8 @@ class _FavouritePageWidgetState extends State<FavouritePageWidget>
                 FFLocalizations.of(context).getText(
                   'rfqqqf2k' /* Ed Sheeran */,
                 ),
-                style: GoogleFonts.getFont(
-                  'Satoshi',
+                style: TextStyle(
+                  fontFamily: 'Meta font ',
                   color: FlutterFlowTheme.of(context).e1e1e1,
                   fontWeight: FontWeight.w500,
                   fontSize: 20.0,
@@ -316,8 +316,8 @@ class _FavouritePageWidgetState extends State<FavouritePageWidget>
                 FFLocalizations.of(context).getText(
                   'ucey69j7' /* 5 Album , 256 Track */,
                 ),
-                style: GoogleFonts.getFont(
-                  'Satoshi',
+                style: TextStyle(
+                  fontFamily: 'Meta font ',
                   color: FlutterFlowTheme.of(context).d6d6d6,
                   fontWeight: FontWeight.w300,
                   fontSize: 13.0,
@@ -331,8 +331,8 @@ class _FavouritePageWidgetState extends State<FavouritePageWidget>
                   '7njwfs7q' /* Edward Christopher Sheeran MBE... */,
                 ),
                 textAlign: TextAlign.center,
-                style: GoogleFonts.getFont(
-                  'Satoshi',
+                style: TextStyle(
+                  fontFamily: 'Meta font ',
                   color: FlutterFlowTheme.of(context).d6d6d6,
                   fontWeight: FontWeight.w300,
                   fontSize: 13.0,
@@ -347,8 +347,8 @@ class _FavouritePageWidgetState extends State<FavouritePageWidget>
                   FFLocalizations.of(context).getText(
                     'p20xgb5t' /* Albums */,
                   ),
-                  style: GoogleFonts.getFont(
-                    'Satoshi',
+                  style: TextStyle(
+                    fontFamily: 'Meta font ',
                     color: FlutterFlowTheme.of(context).dddddd,
                     fontWeight: FontWeight.w500,
                     fontSize: 16.0,
@@ -390,8 +390,8 @@ class _FavouritePageWidgetState extends State<FavouritePageWidget>
                           FFLocalizations.of(context).getText(
                             'wbevysro' /* = (Tour Edition) */,
                           ),
-                          style: GoogleFonts.getFont(
-                            'Satoshi',
+                          style: TextStyle(
+                            fontFamily: 'Meta font ',
                             color: FlutterFlowTheme.of(context).d6d6d6,
                             fontWeight: FontWeight.w500,
                             fontSize: 13.0,
@@ -426,8 +426,8 @@ class _FavouritePageWidgetState extends State<FavouritePageWidget>
                           FFLocalizations.of(context).getText(
                             'drtj1nut' /* No.6 Collaboration ... */,
                           ),
-                          style: GoogleFonts.getFont(
-                            'Satoshi',
+                          style: TextStyle(
+                            fontFamily: 'Meta font ',
                             color: FlutterFlowTheme.of(context).d6d6d6,
                             fontWeight: FontWeight.w500,
                             fontSize: 13.0,
@@ -462,8 +462,8 @@ class _FavouritePageWidgetState extends State<FavouritePageWidget>
                           FFLocalizations.of(context).getText(
                             'i3phcmzt' /* ÷ (Deluxe) */,
                           ),
-                          style: GoogleFonts.getFont(
-                            'Satoshi',
+                          style: TextStyle(
+                            fontFamily: 'Meta font ',
                             color: FlutterFlowTheme.of(context).d6d6d6,
                             fontWeight: FontWeight.w500,
                             fontSize: 13.0,
@@ -498,8 +498,8 @@ class _FavouritePageWidgetState extends State<FavouritePageWidget>
                           FFLocalizations.of(context).getText(
                             '75615n04' /* x (Wembley Edition) */,
                           ),
-                          style: GoogleFonts.getFont(
-                            'Satoshi',
+                          style: TextStyle(
+                            fontFamily: 'Meta font ',
                             color: FlutterFlowTheme.of(context).d6d6d6,
                             fontWeight: FontWeight.w500,
                             fontSize: 13.0,
@@ -534,8 +534,8 @@ class _FavouritePageWidgetState extends State<FavouritePageWidget>
                           FFLocalizations.of(context).getText(
                             '6qfchw42' /* + */,
                           ),
-                          style: GoogleFonts.getFont(
-                            'Satoshi',
+                          style: TextStyle(
+                            fontFamily: 'Meta font ',
                             color: FlutterFlowTheme.of(context).d6d6d6,
                             fontWeight: FontWeight.w500,
                             fontSize: 13.0,
@@ -572,8 +572,8 @@ class _FavouritePageWidgetState extends State<FavouritePageWidget>
                             FFLocalizations.of(context).getText(
                               'gam00czp' /* Songs */,
                             ),
-                            style: GoogleFonts.getFont(
-                              'Satoshi',
+                            style: TextStyle(
+                              fontFamily: 'Meta font ',
                               color: FlutterFlowTheme.of(context).dbdbdb,
                               fontWeight: FontWeight.w500,
                               fontSize: 20.0,
@@ -583,8 +583,8 @@ class _FavouritePageWidgetState extends State<FavouritePageWidget>
                             FFLocalizations.of(context).getText(
                               '8pmicze7' /* See More */,
                             ),
-                            style: GoogleFonts.getFont(
-                              'Satoshi',
+                            style: TextStyle(
+                              fontFamily: 'Meta font ',
                               color: FlutterFlowTheme.of(context).c6c6c6,
                               fontWeight: FontWeight.w300,
                               fontSize: 12.0,
@@ -630,8 +630,8 @@ class _FavouritePageWidgetState extends State<FavouritePageWidget>
                                   FFLocalizations.of(context).getText(
                                     'qdro55o6' /* Celestial */,
                                   ),
-                                  style: GoogleFonts.getFont(
-                                    'Satoshi',
+                                  style: TextStyle(
+                                    fontFamily: 'Meta font ',
                                     color: FlutterFlowTheme.of(context).d6d6d6,
                                     fontWeight: FontWeight.w500,
                                     fontSize: 16.0,
@@ -641,8 +641,8 @@ class _FavouritePageWidgetState extends State<FavouritePageWidget>
                                   FFLocalizations.of(context).getText(
                                     '4iqantl9' /* Pokemon x Ed Sheeran */,
                                   ),
-                                  style: GoogleFonts.getFont(
-                                    'Satoshi',
+                                  style: TextStyle(
+                                    fontFamily: 'Meta font ',
                                     color: FlutterFlowTheme.of(context).d6d6d6,
                                     fontWeight: FontWeight.w300,
                                     fontSize: 12.0,
@@ -704,8 +704,8 @@ class _FavouritePageWidgetState extends State<FavouritePageWidget>
                                   FFLocalizations.of(context).getText(
                                     '1dkqmt2t' /* Bam Bam */,
                                   ),
-                                  style: GoogleFonts.getFont(
-                                    'Satoshi',
+                                  style: TextStyle(
+                                    fontFamily: 'Meta font ',
                                     color: FlutterFlowTheme.of(context).d6d6d6,
                                     fontWeight: FontWeight.w500,
                                     fontSize: 16.0,
@@ -715,8 +715,8 @@ class _FavouritePageWidgetState extends State<FavouritePageWidget>
                                   FFLocalizations.of(context).getText(
                                     'rrzor42b' /* Camiila Cabello x Ed Sh... */,
                                   ),
-                                  style: GoogleFonts.getFont(
-                                    'Satoshi',
+                                  style: TextStyle(
+                                    fontFamily: 'Meta font ',
                                     color: FlutterFlowTheme.of(context).d6d6d6,
                                     fontWeight: FontWeight.w300,
                                     fontSize: 12.0,
@@ -778,8 +778,8 @@ class _FavouritePageWidgetState extends State<FavouritePageWidget>
                                   FFLocalizations.of(context).getText(
                                     'fqmbwc1f' /* Merry Christmas */,
                                   ),
-                                  style: GoogleFonts.getFont(
-                                    'Satoshi',
+                                  style: TextStyle(
+                                    fontFamily: 'Meta font ',
                                     color: FlutterFlowTheme.of(context).d6d6d6,
                                     fontWeight: FontWeight.w500,
                                     fontSize: 16.0,
@@ -789,8 +789,8 @@ class _FavouritePageWidgetState extends State<FavouritePageWidget>
                                   FFLocalizations.of(context).getText(
                                     'goa8asjs' /* Elton John x Ed Sheeran */,
                                   ),
-                                  style: GoogleFonts.getFont(
-                                    'Satoshi',
+                                  style: TextStyle(
+                                    fontFamily: 'Meta font ',
                                     color: FlutterFlowTheme.of(context).d6d6d6,
                                     fontWeight: FontWeight.w300,
                                     fontSize: 12.0,
@@ -852,8 +852,8 @@ class _FavouritePageWidgetState extends State<FavouritePageWidget>
                                   FFLocalizations.of(context).getText(
                                     'iku5iu22' /* TJATQ */,
                                   ),
-                                  style: GoogleFonts.getFont(
-                                    'Satoshi',
+                                  style: TextStyle(
+                                    fontFamily: 'Meta font ',
                                     color: FlutterFlowTheme.of(context).d6d6d6,
                                     fontWeight: FontWeight.w500,
                                     fontSize: 16.0,
@@ -863,8 +863,8 @@ class _FavouritePageWidgetState extends State<FavouritePageWidget>
                                   FFLocalizations.of(context).getText(
                                     '1qmumdr2' /* Tylor Swift x Ed Sheeran */,
                                   ),
-                                  style: GoogleFonts.getFont(
-                                    'Satoshi',
+                                  style: TextStyle(
+                                    fontFamily: 'Meta font ',
                                     color: FlutterFlowTheme.of(context).d6d6d6,
                                     fontWeight: FontWeight.w300,
                                     fontSize: 12.0,
@@ -923,8 +923,8 @@ class _FavouritePageWidgetState extends State<FavouritePageWidget>
                                 FFLocalizations.of(context).getText(
                                   '02qyv3or' /* Call on me */,
                                 ),
-                                style: GoogleFonts.getFont(
-                                  'Satoshi',
+                                style: TextStyle(
+                                  fontFamily: 'Meta font ',
                                   color: FlutterFlowTheme.of(context).d6d6d6,
                                   fontWeight: FontWeight.w500,
                                   fontSize: 16.0,
@@ -934,8 +934,8 @@ class _FavouritePageWidgetState extends State<FavouritePageWidget>
                                 FFLocalizations.of(context).getText(
                                   '0w2trp8v' /* Vianney x Ed Sheeran */,
                                 ),
-                                style: GoogleFonts.getFont(
-                                  'Satoshi',
+                                style: TextStyle(
+                                  fontFamily: 'Meta font ',
                                   color: FlutterFlowTheme.of(context).d6d6d6,
                                   fontWeight: FontWeight.w300,
                                   fontSize: 12.0,

@@ -16,7 +16,20 @@ class GmmusicRecord extends FirestoreRecord {
     _initializeFields();
   }
 
-  void _initializeFields() {}
+  // "name" field.
+  String? _name;
+  String get name => _name ?? '';
+  bool hasName() => _name != null;
+
+  // "tracks" field.
+  List<DocumentReference>? _tracks;
+  List<DocumentReference> get tracks => _tracks ?? const [];
+  bool hasTracks() => _tracks != null;
+
+  void _initializeFields() {
+    _name = snapshotData['name'] as String?;
+    _tracks = getDataList(snapshotData['tracks']);
+  }
 
   static CollectionReference get collection =>
       FirebaseFirestore.instance.collection('gmmusic');
@@ -52,9 +65,13 @@ class GmmusicRecord extends FirestoreRecord {
       reference.path.hashCode == other.reference.path.hashCode;
 }
 
-Map<String, dynamic> createGmmusicRecordData() {
+Map<String, dynamic> createGmmusicRecordData({
+  String? name,
+}) {
   final firestoreData = mapToFirestore(
-    <String, dynamic>{}.withoutNulls,
+    <String, dynamic>{
+      'name': name,
+    }.withoutNulls,
   );
 
   return firestoreData;
@@ -65,11 +82,12 @@ class GmmusicRecordDocumentEquality implements Equality<GmmusicRecord> {
 
   @override
   bool equals(GmmusicRecord? e1, GmmusicRecord? e2) {
-    return;
+    const listEquality = ListEquality();
+    return e1?.name == e2?.name && listEquality.equals(e1?.tracks, e2?.tracks);
   }
 
   @override
-  int hash(GmmusicRecord? e) => const ListEquality().hash([]);
+  int hash(GmmusicRecord? e) => const ListEquality().hash([e?.name, e?.tracks]);
 
   @override
   bool isValidKey(Object? o) => o is GmmusicRecord;

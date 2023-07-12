@@ -1,14 +1,18 @@
+import '/auth/firebase_auth/auth_util.dart';
+import '/backend/backend.dart';
 import '/components/back_button/back_button_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
+import '/flutter_flow/flutter_flow_audio_player.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:just_audio/just_audio.dart';
 import 'package:provider/provider.dart';
 import 'song_details_page_model.dart';
 export 'song_details_page_model.dart';
@@ -282,8 +286,8 @@ class _SongDetailsPageWidgetState extends State<SongDetailsPageWidget>
                                   FFLocalizations.of(context).getText(
                                     '48hyp0lg' /* Now Playing */,
                                   ),
-                                  style: GoogleFonts.getFont(
-                                    'Satoshi',
+                                  style: TextStyle(
+                                    fontFamily: 'Meta font ',
                                     color: FlutterFlowTheme.of(context).dddddd,
                                     fontWeight: FontWeight.w500,
                                     fontSize: 18.0,
@@ -325,38 +329,64 @@ class _SongDetailsPageWidgetState extends State<SongDetailsPageWidget>
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Column(
-                                mainAxisSize: MainAxisSize.max,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    widget.songName!,
-                                    style: GoogleFonts.getFont(
-                                      'Satoshi',
-                                      color:
-                                          FlutterFlowTheme.of(context).dfdfdf,
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 20.0,
-                                    ),
-                                  ),
-                                  Text(
-                                    widget.artistName!,
-                                    style: GoogleFonts.getFont(
-                                      'Satoshi',
-                                      color:
-                                          FlutterFlowTheme.of(context).bababa,
-                                      fontWeight: FontWeight.w300,
-                                      fontSize: 20.0,
-                                    ),
-                                  ),
-                                ],
-                              ).animateOnPageLoad(
-                                  animationsMap['columnOnPageLoadAnimation']!),
-                              SvgPicture.asset(
-                                'assets/images/heart.svg',
-                                width: 24.0,
-                                height: 24.0,
-                                fit: BoxFit.scaleDown,
+                              StreamBuilder<List<GmmusicRecord>>(
+                                stream: queryGmmusicRecord(),
+                                builder: (context, snapshot) {
+                                  // Customize what your widget looks like when it's loading.
+                                  if (!snapshot.hasData) {
+                                    return Center(
+                                      child: SizedBox(
+                                        width: 50.0,
+                                        height: 50.0,
+                                        child: SpinKitWanderingCubes(
+                                          color: Color(0xFF3C9BC8),
+                                          size: 50.0,
+                                        ),
+                                      ),
+                                    );
+                                  }
+                                  List<GmmusicRecord> columnGmmusicRecordList =
+                                      snapshot.data!;
+                                  return Column(
+                                    mainAxisSize: MainAxisSize.max,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: List.generate(
+                                        columnGmmusicRecordList.length,
+                                        (columnIndex) {
+                                      final columnGmmusicRecord =
+                                          columnGmmusicRecordList[columnIndex];
+                                      return Text(
+                                        columnGmmusicRecord.name,
+                                        style: TextStyle(
+                                          fontFamily: 'Meta font ',
+                                          color: FlutterFlowTheme.of(context)
+                                              .dfdfdf,
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 20.0,
+                                        ),
+                                      );
+                                    }),
+                                  ).animateOnPageLoad(animationsMap[
+                                      'columnOnPageLoadAnimation']!);
+                                },
+                              ),
+                              InkWell(
+                                splashColor: Colors.transparent,
+                                focusColor: Colors.transparent,
+                                hoverColor: Colors.transparent,
+                                highlightColor: Colors.transparent,
+                                onTap: () async {
+                                  await queryGmmusicRecordOnce(
+                                    singleRecord: true,
+                                  ).then((s) => s.firstOrNull);
+                                },
+                                child: SvgPicture.asset(
+                                  'assets/images/heart.svg',
+                                  width: 24.0,
+                                  height: 24.0,
+                                  fit: BoxFit.scaleDown,
+                                ),
                               ).animateOnPageLoad(
                                   animationsMap['imageOnPageLoadAnimation2']!),
                             ],
@@ -455,41 +485,54 @@ class _SongDetailsPageWidgetState extends State<SongDetailsPageWidget>
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, 0.8),
-                child: Container(
-                  width: 100.0,
-                  height: 100.0,
-                  decoration: BoxDecoration(
-                    color: Color(0x00343434),
+                alignment: AlignmentDirectional(0.0, 0.87),
+                child: StreamBuilder<List<GmmusicRecord>>(
+                  stream: queryGmmusicRecord(
+                    singleRecord: true,
                   ),
-                  child: Align(
-                    alignment: AlignmentDirectional(0.0, 1.0),
-                    child: InkWell(
-                      splashColor: Colors.transparent,
-                      focusColor: Colors.transparent,
-                      hoverColor: Colors.transparent,
-                      highlightColor: Colors.transparent,
-                      onTap: () async {
-                        _model.soundPlayer ??= AudioPlayer();
-                        if (_model.soundPlayer!.playing) {
-                          await _model.soundPlayer!.stop();
-                        }
-                        _model.soundPlayer!.setVolume(1.0);
-                        _model.soundPlayer!
-                            .setUrl('')
-                            .then((_) => _model.soundPlayer!.play());
-                      },
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(8.0),
-                        child: Image.asset(
-                          'assets/images/play.png',
-                          width: 300.0,
-                          height: 291.0,
-                          fit: BoxFit.cover,
+                  builder: (context, snapshot) {
+                    // Customize what your widget looks like when it's loading.
+                    if (!snapshot.hasData) {
+                      return Center(
+                        child: SizedBox(
+                          width: 50.0,
+                          height: 50.0,
+                          child: SpinKitWanderingCubes(
+                            color: Color(0xFF3C9BC8),
+                            size: 50.0,
+                          ),
+                        ),
+                      );
+                    }
+                    List<GmmusicRecord> audioPlayerGmmusicRecordList =
+                        snapshot.data!;
+                    // Return an empty Container when the item does not exist.
+                    if (snapshot.data!.isEmpty) {
+                      return Container();
+                    }
+                    final audioPlayerGmmusicRecord =
+                        audioPlayerGmmusicRecordList.isNotEmpty
+                            ? audioPlayerGmmusicRecordList.first
+                            : null;
+                    return FlutterFlowAudioPlayer(
+                      audio: Audio.network(
+                        'gs://goodmoon1-63946.appspot.com/Aether goddes/Aether Goddes.mp3',
+                        metas: Metas(
+                          id: 'Aether_Goddes.mp3-145afa2b',
+                          title: 'goddes',
                         ),
                       ),
-                    ),
-                  ),
+                      titleTextStyle: FlutterFlowTheme.of(context).titleLarge,
+                      playbackDurationTextStyle:
+                          FlutterFlowTheme.of(context).labelMedium,
+                      fillColor:
+                          FlutterFlowTheme.of(context).secondaryBackground,
+                      playbackButtonColor: FlutterFlowTheme.of(context).primary,
+                      activeTrackColor: FlutterFlowTheme.of(context).alternate,
+                      elevation: 4.0,
+                      playInBackground: PlayInBackground.enabled,
+                    );
+                  },
                 ),
               ),
             ],

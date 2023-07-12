@@ -289,8 +289,8 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                     FFLocalizations.of(context).getText(
                                       'ugof5x73' /* Profile */,
                                     ),
-                                    style: GoogleFonts.getFont(
-                                      'Satoshi',
+                                    style: TextStyle(
+                                      fontFamily: 'Meta font ',
                                       color:
                                           FlutterFlowTheme.of(context).dddddd,
                                       fontWeight: FontWeight.w500,
@@ -336,8 +336,8 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                               FFLocalizations.of(context).getText(
                                 'pb8qxrx1' /* alvishramani4@gmail.com */,
                               ),
-                              style: GoogleFonts.getFont(
-                                'Satoshi',
+                              style: TextStyle(
+                                fontFamily: 'Meta font ',
                                 color: FlutterFlowTheme.of(context).d6d6d6,
                                 fontWeight: FontWeight.w300,
                                 fontSize: 12.0,
@@ -352,8 +352,8 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                               FFLocalizations.of(context).getText(
                                 'a62rp8gf' /* Alvish0407 */,
                               ),
-                              style: GoogleFonts.getFont(
-                                'Satoshi',
+                              style: TextStyle(
+                                fontFamily: 'Meta font ',
                                 color: FlutterFlowTheme.of(context).primaryText,
                                 fontWeight: FontWeight.w500,
                                 fontSize: 20.0,
@@ -375,9 +375,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily,
+                                          fontFamily: 'Meta font ',
                                           color: FlutterFlowTheme.of(context)
                                               .primaryText,
                                           fontSize: 20.0,
@@ -395,9 +393,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily,
+                                          fontFamily: 'Meta font ',
                                           color: FlutterFlowTheme.of(context)
                                               .a0a0a0,
                                           fontWeight: FontWeight.w300,
@@ -426,9 +422,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily,
+                                          fontFamily: 'Meta font ',
                                           color: FlutterFlowTheme.of(context)
                                               .primaryText,
                                           fontSize: 20.0,
@@ -446,9 +440,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMediumFamily,
+                                          fontFamily: 'Meta font ',
                                           color: FlutterFlowTheme.of(context)
                                               .a0a0a0,
                                           fontWeight: FontWeight.w300,
@@ -546,21 +538,16 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                             children: [
                               Text(
                                 FFLocalizations.of(context).getText(
-                                  'ph5hh7bz' /* Wrap 2022 */,
+                                  'zp0yfjmf' /* Hello World */,
                                 ),
-                                style: GoogleFonts.getFont(
-                                  'Satoshi',
-                                  color: FlutterFlowTheme.of(context).d6d6d6,
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 16.0,
-                                ),
+                                style: FlutterFlowTheme.of(context).labelMedium,
                               ),
                               Text(
                                 FFLocalizations.of(context).getText(
                                   'mo6fkhqn' /* 101 Songs */,
                                 ),
-                                style: GoogleFonts.getFont(
-                                  'Satoshi',
+                                style: TextStyle(
+                                  fontFamily: 'Meta font ',
                                   color: FlutterFlowTheme.of(context).d6d6d6,
                                   fontWeight: FontWeight.w300,
                                   fontSize: 12.0,
@@ -580,8 +567,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily,
+                                  fontFamily: 'Meta font ',
                                   fontWeight: FontWeight.w500,
                                   useGoogleFonts: GoogleFonts.asMap()
                                       .containsKey(FlutterFlowTheme.of(context)
@@ -636,8 +622,8 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                 FFLocalizations.of(context).getText(
                                   'l68lv5oy' /* Wrap 2021 */,
                                 ),
-                                style: GoogleFonts.getFont(
-                                  'Satoshi',
+                                style: TextStyle(
+                                  fontFamily: 'Meta font ',
                                   color: FlutterFlowTheme.of(context).d6d6d6,
                                   fontWeight: FontWeight.w500,
                                   fontSize: 16.0,
@@ -647,8 +633,8 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                 FFLocalizations.of(context).getText(
                                   '6q1yfbkg' /* 100 Songs */,
                                 ),
-                                style: GoogleFonts.getFont(
-                                  'Satoshi',
+                                style: TextStyle(
+                                  fontFamily: 'Meta font ',
                                   color: FlutterFlowTheme.of(context).d6d6d6,
                                   fontWeight: FontWeight.w300,
                                   fontSize: 12.0,
@@ -668,8 +654,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily,
+                                  fontFamily: 'Meta font ',
                                   fontWeight: FontWeight.w500,
                                   useGoogleFonts: GoogleFonts.asMap()
                                       .containsKey(FlutterFlowTheme.of(context)
@@ -724,8 +709,8 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                 FFLocalizations.of(context).getText(
                                   'hjddctc3' /* Goes Relax */,
                                 ),
-                                style: GoogleFonts.getFont(
-                                  'Satoshi',
+                                style: TextStyle(
+                                  fontFamily: 'Meta font ',
                                   color: FlutterFlowTheme.of(context).d6d6d6,
                                   fontWeight: FontWeight.w500,
                                   fontSize: 16.0,
@@ -735,8 +720,8 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                 FFLocalizations.of(context).getText(
                                   'a0ye6dlx' /* 94 Songs */,
                                 ),
-                                style: GoogleFonts.getFont(
-                                  'Satoshi',
+                                style: TextStyle(
+                                  fontFamily: 'Meta font ',
                                   color: FlutterFlowTheme.of(context).d6d6d6,
                                   fontWeight: FontWeight.w300,
                                   fontSize: 12.0,
@@ -812,8 +797,8 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                 FFLocalizations.of(context).getText(
                                   'en51z37e' /* JB's World */,
                                 ),
-                                style: GoogleFonts.getFont(
-                                  'Satoshi',
+                                style: TextStyle(
+                                  fontFamily: 'Meta font ',
                                   color: FlutterFlowTheme.of(context).d6d6d6,
                                   fontWeight: FontWeight.w500,
                                   fontSize: 16.0,
@@ -823,8 +808,8 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                 FFLocalizations.of(context).getText(
                                   '3ijglgbx' /* 17 Songs */,
                                 ),
-                                style: GoogleFonts.getFont(
-                                  'Satoshi',
+                                style: TextStyle(
+                                  fontFamily: 'Meta font ',
                                   color: FlutterFlowTheme.of(context).d6d6d6,
                                   fontWeight: FontWeight.w300,
                                   fontSize: 12.0,
@@ -900,8 +885,8 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                 FFLocalizations.of(context).getText(
                                   'g11xjhet' /* 1 Direction */,
                                 ),
-                                style: GoogleFonts.getFont(
-                                  'Satoshi',
+                                style: TextStyle(
+                                  fontFamily: 'Meta font ',
                                   color: FlutterFlowTheme.of(context).d6d6d6,
                                   fontWeight: FontWeight.w500,
                                   fontSize: 16.0,
@@ -911,8 +896,8 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                 FFLocalizations.of(context).getText(
                                   'eolumdtn' /* 21 Songs */,
                                 ),
-                                style: GoogleFonts.getFont(
-                                  'Satoshi',
+                                style: TextStyle(
+                                  fontFamily: 'Meta font ',
                                   color: FlutterFlowTheme.of(context).d6d6d6,
                                   fontWeight: FontWeight.w300,
                                   fontSize: 12.0,
@@ -988,8 +973,8 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                 FFLocalizations.of(context).getText(
                                   't3243bhu' /* Maroon 5 */,
                                 ),
-                                style: GoogleFonts.getFont(
-                                  'Satoshi',
+                                style: TextStyle(
+                                  fontFamily: 'Meta font ',
                                   color: FlutterFlowTheme.of(context).d6d6d6,
                                   fontWeight: FontWeight.w500,
                                   fontSize: 16.0,
@@ -999,8 +984,8 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                 FFLocalizations.of(context).getText(
                                   '8p2otlt0' /* 8 Songs */,
                                 ),
-                                style: GoogleFonts.getFont(
-                                  'Satoshi',
+                                style: TextStyle(
+                                  fontFamily: 'Meta font ',
                                   color: FlutterFlowTheme.of(context).d6d6d6,
                                   fontWeight: FontWeight.w300,
                                   fontSize: 12.0,
@@ -1076,8 +1061,8 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                 FFLocalizations.of(context).getText(
                                   '6i5olnpo' /* ColdPlay's Age */,
                                 ),
-                                style: GoogleFonts.getFont(
-                                  'Satoshi',
+                                style: TextStyle(
+                                  fontFamily: 'Meta font ',
                                   color: FlutterFlowTheme.of(context).d6d6d6,
                                   fontWeight: FontWeight.w500,
                                   fontSize: 16.0,
@@ -1087,8 +1072,8 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget>
                                 FFLocalizations.of(context).getText(
                                   '8x7jpji4' /* 8 Songs */,
                                 ),
-                                style: GoogleFonts.getFont(
-                                  'Satoshi',
+                                style: TextStyle(
+                                  fontFamily: 'Meta font ',
                                   color: FlutterFlowTheme.of(context).d6d6d6,
                                   fontWeight: FontWeight.w300,
                                   fontSize: 12.0,
