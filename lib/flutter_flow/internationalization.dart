@@ -150,7 +150,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // registerPage
   {
     't87th426': {
-      'en': 'Register',
+      'en': 'Sign Up',
       'es': '',
       'fr': '',
     },
@@ -184,8 +184,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
       'fr': '',
     },
-    '2tizjqvj': {
-      'en': 'Create Account',
+    '70syh2v7': {
+      'en': 'Register',
       'es': '',
       'fr': '',
     },
@@ -201,16 +201,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '9x6u2cxi': {
       'en': ' Sign In',
-      'es': '',
-      'fr': '',
-    },
-    'onfwna0b': {
-      'en': '\nGet Started',
-      'es': '',
-      'fr': '',
-    },
-    'q1cr3rxw': {
-      'en': 'Get Started',
       'es': '',
       'fr': '',
     },
@@ -252,7 +242,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': '',
       'fr': '',
     },
-    'gqtiz96i': {
+    '70syh2v7': {
       'en': 'Sign In',
       'es': '',
       'fr': '',
@@ -273,42 +263,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'fr': '',
     },
     'fbae89uh': {
-      'en': 'Home',
-      'es': '',
-      'fr': '',
-    },
-  },
-  // mainPage
-  {
-    'vbhvk4j6': {
-      'en': 'Home',
-      'es': '',
-      'fr': '',
-    },
-  },
-  // songDetailsPage
-  {
-    '48hyp0lg': {
-      'en': 'Now Playing',
-      'es': '',
-      'fr': '',
-    },
-    'nyk105cl': {
-      'en': 'Hello World',
-      'es': '',
-      'fr': '',
-    },
-    'nhl3sews': {
-      'en': '2:25',
-      'es': '',
-      'fr': '',
-    },
-    '0bwykolp': {
-      'en': '4:02',
-      'es': '',
-      'fr': '',
-    },
-    '1trdirx2': {
       'en': 'Home',
       'es': '',
       'fr': '',
@@ -357,14 +311,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'fr': '',
     },
   },
-  // mainPageCopy
-  {
-    '3ejr30ao': {
-      'en': 'Home',
-      'es': '',
-      'fr': '',
-    },
-  },
   // music
   {
     'hjebb4gl': {
@@ -373,6 +319,182 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'fr': '',
     },
     'c3027a0r': {
+      'en': 'Home',
+      'es': '',
+      'fr': '',
+    },
+  },
+  // Homeclean
+  {
+    'fuidbd53': {
+      'en': 'Hey Manuel',
+      'es': '',
+      'fr': '',
+    },
+    'jia36kvt': {
+      'en': 'Check out our dream products',
+      'es': '',
+      'fr': '',
+    },
+    '0g1t6nng': {
+      'en': 'HSBC is getting back into consumer lending...',
+      'es': '',
+      'fr': '',
+    },
+    '808hkqhf': {
+      'en': 'Jackson Hewiit',
+      'es': '',
+      'fr': '',
+    },
+    'joegdk9u': {
+      'en': '24',
+      'es': '',
+      'fr': '',
+    },
+    'q8c41z6x': {
+      'en': '12h',
+      'es': '',
+      'fr': '',
+    },
+    'i6qfxf4i': {
+      'en': 'HSBC is getting back into consumer lending...',
+      'es': '',
+      'fr': '',
+    },
+    '9p9csfpw': {
+      'en': 'Jackson Hewiit',
+      'es': '',
+      'fr': '',
+    },
+    'qtor0mz2': {
+      'en': '24',
+      'es': '',
+      'fr': '',
+    },
+    'ft76idct': {
+      'en': '12h',
+      'es': '',
+      'fr': '',
+    },
+    'bt9xk646': {
+      'en': 'Music',
+      'es': '',
+      'fr': '',
+    },
+    'o23ekycj': {
+      'en': 'Meditation',
+      'es': '',
+      'fr': '',
+    },
+    'wuzdpzcz': {
+      'en': 'Books',
+      'es': '',
+      'fr': '',
+    },
+    'hvo09n28': {
+      'en': 'Guides',
+      'es': '',
+      'fr': '',
+    },
+    'l1n5erm0': {
+      'en': 'Products',
+      'es': '',
+      'fr': '',
+    },
+    'srf32h82': {
+      'en': 'weather',
+      'es': '',
+      'fr': '',
+    },
+    'fm1317fd': {
+      'en': 'Music',
+      'es': '',
+      'fr': '',
+    },
+    '38c4bg9f': {
+      'en': 'Popular Today',
+      'es': '',
+      'fr': '',
+    },
+    'mfakmi45': {
+      'en':
+          'HSBC is getting back into consumer lending in the us according to...',
+      'es': '',
+      'fr': '',
+    },
+    'kw9waram': {
+      'en': 'Jackson Hewiit',
+      'es': '',
+      'fr': '',
+    },
+    '1u0uvxrx': {
+      'en': '24',
+      'es': '',
+      'fr': '',
+    },
+    'jbya4sig': {
+      'en': '12h',
+      'es': '',
+      'fr': '',
+    },
+    'eci7elgk': {
+      'en': 'Read Now',
+      'es': '',
+      'fr': '',
+    },
+    'pdcqpaow': {
+      'en':
+          'HSBC is getting back into consumer lending in the us according to...',
+      'es': '',
+      'fr': '',
+    },
+    'uixp9bjs': {
+      'en': 'Jackson Hewiit',
+      'es': '',
+      'fr': '',
+    },
+    'jx2ao3nv': {
+      'en': '24',
+      'es': '',
+      'fr': '',
+    },
+    '8nuw0278': {
+      'en': '12h',
+      'es': '',
+      'fr': '',
+    },
+    'bxvs27an': {
+      'en': 'Read Now',
+      'es': '',
+      'fr': '',
+    },
+    'r5qlycai': {
+      'en':
+          'HSBC is getting back into consumer lending in the us according to...',
+      'es': '',
+      'fr': '',
+    },
+    'mqgteicx': {
+      'en': 'Jackson Hewiit',
+      'es': '',
+      'fr': '',
+    },
+    'kiry33kf': {
+      'en': '24',
+      'es': '',
+      'fr': '',
+    },
+    'lww76va8': {
+      'en': '12h',
+      'es': '',
+      'fr': '',
+    },
+    '60s8ic0g': {
+      'en': 'Read Now',
+      'es': '',
+      'fr': '',
+    },
+    'tsnke7g1': {
       'en': 'Home',
       'es': '',
       'fr': '',
@@ -675,11 +797,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // Miscellaneous
   {
-    '70syh2v7': {
-      'en': 'Button',
-      'es': '',
-      'fr': '',
-    },
     'wxw2h38q': {
       'en': '',
       'es': '',

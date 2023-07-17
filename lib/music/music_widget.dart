@@ -1,4 +1,3 @@
-import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
@@ -44,55 +43,31 @@ class _MusicWidgetState extends State<MusicWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
-          child: StreamBuilder<List<GmmusicRecord>>(
-            stream: queryGmmusicRecord(),
-            builder: (context, snapshot) {
-              // Customize what your widget looks like when it's loading.
-              if (!snapshot.hasData) {
-                return Center(
-                  child: SizedBox(
-                    width: 50.0,
-                    height: 50.0,
-                    child: SpinKitWanderingCubes(
-                      color: Color(0xFF3C9BC8),
-                      size: 50.0,
-                    ),
+          child: Column(
+            mainAxisSize: MainAxisSize.max,
+            children: [
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(15.0, 15.0, 15.0, 15.0),
+                child: Card(
+                  clipBehavior: Clip.antiAliasWithSaveLayer,
+                  color: Color(0x18343434),
+                  elevation: 4.0,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8.0),
                   ),
-                );
-              }
-              List<GmmusicRecord> columnGmmusicRecordList = snapshot.data!;
-              return Column(
-                mainAxisSize: MainAxisSize.max,
-                children: List.generate(columnGmmusicRecordList.length,
-                    (columnIndex) {
-                  final columnGmmusicRecord =
-                      columnGmmusicRecordList[columnIndex];
-                  return Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(15.0, 15.0, 15.0, 15.0),
-                    child: Card(
-                      clipBehavior: Clip.antiAliasWithSaveLayer,
-                      color: Color(0x18343434),
-                      elevation: 4.0,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                      child: Text(
-                        FFLocalizations.of(context).getText(
-                          'hjebb4gl' /* name */,
-                        ),
-                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Meta font ',
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
-                            ),
-                      ),
+                  child: Text(
+                    FFLocalizations.of(context).getText(
+                      'hjebb4gl' /* name */,
                     ),
-                  );
-                }),
-              );
-            },
+                    style: FlutterFlowTheme.of(context).bodyMedium.override(
+                          fontFamily: 'Meta font ',
+                          useGoogleFonts: GoogleFonts.asMap().containsKey(
+                              FlutterFlowTheme.of(context).bodyMediumFamily),
+                        ),
+                  ),
+                ),
+              ),
+            ],
           ),
         ),
       ),

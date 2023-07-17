@@ -5,11 +5,7 @@ import '../auth/firebase_auth/auth_util.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import 'schema/util/firestore_util.dart';
 
-import 'schema/gmmusic_record.dart';
 import 'schema/users_record.dart';
-import 'schema/music_record.dart';
-import 'schema/song_record.dart';
-import 'schema/track_record.dart';
 
 export 'dart:async' show StreamSubscription;
 export 'package:cloud_firestore/cloud_firestore.dart';
@@ -17,63 +13,7 @@ export 'schema/index.dart';
 export 'schema/util/firestore_util.dart';
 export 'schema/util/schema_util.dart';
 
-export 'schema/gmmusic_record.dart';
 export 'schema/users_record.dart';
-export 'schema/music_record.dart';
-export 'schema/song_record.dart';
-export 'schema/track_record.dart';
-
-/// Functions to query GmmusicRecords (as a Stream and as a Future).
-Future<int> queryGmmusicRecordCount({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-}) =>
-    queryCollectionCount(
-      GmmusicRecord.collection,
-      queryBuilder: queryBuilder,
-      limit: limit,
-    );
-
-Stream<List<GmmusicRecord>> queryGmmusicRecord({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-  bool singleRecord = false,
-}) =>
-    queryCollection(
-      GmmusicRecord.collection,
-      GmmusicRecord.fromSnapshot,
-      queryBuilder: queryBuilder,
-      limit: limit,
-      singleRecord: singleRecord,
-    );
-
-Future<List<GmmusicRecord>> queryGmmusicRecordOnce({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-  bool singleRecord = false,
-}) =>
-    queryCollectionOnce(
-      GmmusicRecord.collection,
-      GmmusicRecord.fromSnapshot,
-      queryBuilder: queryBuilder,
-      limit: limit,
-      singleRecord: singleRecord,
-    );
-
-Future<FFFirestorePage<GmmusicRecord>> queryGmmusicRecordPage({
-  Query Function(Query)? queryBuilder,
-  DocumentSnapshot? nextPageMarker,
-  required int pageSize,
-  required bool isStream,
-}) =>
-    queryCollectionPage(
-      GmmusicRecord.collection,
-      GmmusicRecord.fromSnapshot,
-      queryBuilder: queryBuilder,
-      nextPageMarker: nextPageMarker,
-      pageSize: pageSize,
-      isStream: isStream,
-    );
 
 /// Functions to query UsersRecords (as a Stream and as a Future).
 Future<int> queryUsersRecordCount({
@@ -110,185 +50,6 @@ Future<List<UsersRecord>> queryUsersRecordOnce({
       queryBuilder: queryBuilder,
       limit: limit,
       singleRecord: singleRecord,
-    );
-
-Future<FFFirestorePage<UsersRecord>> queryUsersRecordPage({
-  Query Function(Query)? queryBuilder,
-  DocumentSnapshot? nextPageMarker,
-  required int pageSize,
-  required bool isStream,
-}) =>
-    queryCollectionPage(
-      UsersRecord.collection,
-      UsersRecord.fromSnapshot,
-      queryBuilder: queryBuilder,
-      nextPageMarker: nextPageMarker,
-      pageSize: pageSize,
-      isStream: isStream,
-    );
-
-/// Functions to query MusicRecords (as a Stream and as a Future).
-Future<int> queryMusicRecordCount({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-}) =>
-    queryCollectionCount(
-      MusicRecord.collection,
-      queryBuilder: queryBuilder,
-      limit: limit,
-    );
-
-Stream<List<MusicRecord>> queryMusicRecord({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-  bool singleRecord = false,
-}) =>
-    queryCollection(
-      MusicRecord.collection,
-      MusicRecord.fromSnapshot,
-      queryBuilder: queryBuilder,
-      limit: limit,
-      singleRecord: singleRecord,
-    );
-
-Future<List<MusicRecord>> queryMusicRecordOnce({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-  bool singleRecord = false,
-}) =>
-    queryCollectionOnce(
-      MusicRecord.collection,
-      MusicRecord.fromSnapshot,
-      queryBuilder: queryBuilder,
-      limit: limit,
-      singleRecord: singleRecord,
-    );
-
-Future<FFFirestorePage<MusicRecord>> queryMusicRecordPage({
-  Query Function(Query)? queryBuilder,
-  DocumentSnapshot? nextPageMarker,
-  required int pageSize,
-  required bool isStream,
-}) =>
-    queryCollectionPage(
-      MusicRecord.collection,
-      MusicRecord.fromSnapshot,
-      queryBuilder: queryBuilder,
-      nextPageMarker: nextPageMarker,
-      pageSize: pageSize,
-      isStream: isStream,
-    );
-
-/// Functions to query SongRecords (as a Stream and as a Future).
-Future<int> querySongRecordCount({
-  DocumentReference? parent,
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-}) =>
-    queryCollectionCount(
-      SongRecord.collection(parent),
-      queryBuilder: queryBuilder,
-      limit: limit,
-    );
-
-Stream<List<SongRecord>> querySongRecord({
-  DocumentReference? parent,
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-  bool singleRecord = false,
-}) =>
-    queryCollection(
-      SongRecord.collection(parent),
-      SongRecord.fromSnapshot,
-      queryBuilder: queryBuilder,
-      limit: limit,
-      singleRecord: singleRecord,
-    );
-
-Future<List<SongRecord>> querySongRecordOnce({
-  DocumentReference? parent,
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-  bool singleRecord = false,
-}) =>
-    queryCollectionOnce(
-      SongRecord.collection(parent),
-      SongRecord.fromSnapshot,
-      queryBuilder: queryBuilder,
-      limit: limit,
-      singleRecord: singleRecord,
-    );
-
-Future<FFFirestorePage<SongRecord>> querySongRecordPage({
-  DocumentReference? parent,
-  Query Function(Query)? queryBuilder,
-  DocumentSnapshot? nextPageMarker,
-  required int pageSize,
-  required bool isStream,
-}) =>
-    queryCollectionPage(
-      SongRecord.collection(parent),
-      SongRecord.fromSnapshot,
-      queryBuilder: queryBuilder,
-      nextPageMarker: nextPageMarker,
-      pageSize: pageSize,
-      isStream: isStream,
-    );
-
-/// Functions to query TrackRecords (as a Stream and as a Future).
-Future<int> queryTrackRecordCount({
-  DocumentReference? parent,
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-}) =>
-    queryCollectionCount(
-      TrackRecord.collection(parent),
-      queryBuilder: queryBuilder,
-      limit: limit,
-    );
-
-Stream<List<TrackRecord>> queryTrackRecord({
-  DocumentReference? parent,
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-  bool singleRecord = false,
-}) =>
-    queryCollection(
-      TrackRecord.collection(parent),
-      TrackRecord.fromSnapshot,
-      queryBuilder: queryBuilder,
-      limit: limit,
-      singleRecord: singleRecord,
-    );
-
-Future<List<TrackRecord>> queryTrackRecordOnce({
-  DocumentReference? parent,
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-  bool singleRecord = false,
-}) =>
-    queryCollectionOnce(
-      TrackRecord.collection(parent),
-      TrackRecord.fromSnapshot,
-      queryBuilder: queryBuilder,
-      limit: limit,
-      singleRecord: singleRecord,
-    );
-
-Future<FFFirestorePage<TrackRecord>> queryTrackRecordPage({
-  DocumentReference? parent,
-  Query Function(Query)? queryBuilder,
-  DocumentSnapshot? nextPageMarker,
-  required int pageSize,
-  required bool isStream,
-}) =>
-    queryCollectionPage(
-      TrackRecord.collection(parent),
-      TrackRecord.fromSnapshot,
-      queryBuilder: queryBuilder,
-      nextPageMarker: nextPageMarker,
-      pageSize: pageSize,
-      isStream: isStream,
     );
 
 Future<int> queryCollectionCount(
@@ -437,4 +198,9 @@ Future maybeCreateUser(User user) async {
 
   await userRecord.set(userData);
   currentUserDocument = UsersRecord.getDocumentFromData(userData, userRecord);
+}
+
+Future updateUserDocument({String? email}) async {
+  await currentUserDocument?.reference
+      .update(createUsersRecordData(email: email));
 }

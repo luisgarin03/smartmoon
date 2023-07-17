@@ -2,7 +2,7 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import '/pages/main_page/main_page_widget.dart';
+import '/pages/homeclean/homeclean_widget.dart';
 import '/pages/sign_in_page/sign_in_page_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
@@ -230,7 +230,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget>
               children: [
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(25.0, 30.0, 30.0, 0.0),
+                      EdgeInsetsDirectional.fromSTEB(25.0, 20.0, 25.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -264,8 +264,8 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget>
                       ),
                       Image.asset(
                         'assets/images/APP_(49).png',
-                        width: 120.0,
-                        height: 38.0,
+                        width: 175.0,
+                        height: 65.0,
                         fit: BoxFit.scaleDown,
                       ).animateOnPageLoad(
                           animationsMap['imageOnPageLoadAnimation']!),
@@ -285,10 +285,10 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget>
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 80.0, 0.0, 22.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 70.0, 0.0, 22.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
-                      't87th426' /* Register */,
+                      't87th426' /* Sign Up */,
                     ),
                     textAlign: TextAlign.start,
                     style: TextStyle(
@@ -317,19 +317,24 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget>
                           fontSize: 12.0,
                         ),
                       ),
-                      Text(
-                        FFLocalizations.of(context).getText(
-                          'zp0yfjmf' /* Click Here */,
+                      Padding(
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
+                        child: Text(
+                          FFLocalizations.of(context).getText(
+                            'zp0yfjmf' /* Click Here */,
+                          ),
+                          style: FlutterFlowTheme.of(context)
+                              .labelMedium
+                              .override(
+                                fontFamily: FlutterFlowTheme.of(context)
+                                    .labelMediumFamily,
+                                color: FlutterFlowTheme.of(context).primary,
+                                useGoogleFonts: GoogleFonts.asMap().containsKey(
+                                    FlutterFlowTheme.of(context)
+                                        .labelMediumFamily),
+                              ),
                         ),
-                        style:
-                            FlutterFlowTheme.of(context).labelMedium.override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .labelMediumFamily,
-                                  color: FlutterFlowTheme.of(context).primary,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .labelMediumFamily),
-                                ),
                       ),
                     ],
                   ).animateOnPageLoad(
@@ -552,7 +557,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget>
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 21.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                   child: FFButtonWidget(
                     onPressed: () async {
                       Navigator.push(
@@ -561,41 +566,41 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget>
                           type: PageTransitionType.rightToLeft,
                           duration: Duration(milliseconds: 300),
                           reverseDuration: Duration(milliseconds: 300),
-                          child: MainPageWidget(),
+                          child: HomecleanWidget(),
                         ),
                       );
                     },
                     text: FFLocalizations.of(context).getText(
-                      '2tizjqvj' /* Create Account */,
+                      '70syh2v7' /* Register */,
                     ),
                     options: FFButtonOptions(
-                      width: 329.0,
-                      height: 92.0,
+                      height: 40.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                       iconPadding:
                           EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                      color: FlutterFlowTheme.of(context).primary,
-                      textStyle: TextStyle(
-                        fontFamily: 'Meta font ',
-                        color: FlutterFlowTheme.of(context).f6f6f6,
-                        fontWeight: FontWeight.w500,
-                        fontSize: 22.0,
-                      ),
-                      elevation: 2.0,
+                      color: Color(0x1FC6C6C6),
+                      textStyle: FlutterFlowTheme.of(context)
+                          .titleSmall
+                          .override(
+                            fontFamily: 'Meta font ',
+                            color: Colors.white,
+                            useGoogleFonts: GoogleFonts.asMap().containsKey(
+                                FlutterFlowTheme.of(context).titleSmallFamily),
+                          ),
+                      elevation: 3.0,
                       borderSide: BorderSide(
-                        color: FlutterFlowTheme.of(context).accent2,
+                        color: Colors.transparent,
                         width: 1.0,
                       ),
-                      borderRadius: BorderRadius.circular(30.0),
+                      borderRadius: BorderRadius.circular(8.0),
                     ),
-                    showLoadingIndicator: false,
                   ).animateOnPageLoad(
                       animationsMap['buttonOnPageLoadAnimation']!),
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(33.0, 0.0, 33.0, 51.0),
+                      EdgeInsetsDirectional.fromSTEB(33.0, 0.0, 33.0, 30.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
@@ -670,7 +675,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget>
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(137.0, 0.0, 137.0, 57.0),
+                      EdgeInsetsDirectional.fromSTEB(137.0, 0.0, 137.0, 30.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -744,74 +749,6 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget>
                     ],
                   ).animateOnPageLoad(
                       animationsMap['rowOnPageLoadAnimation4']!),
-                ),
-                Align(
-                  alignment: AlignmentDirectional(0.0, 0.0),
-                  child: Container(
-                    width: 200.0,
-                    child: Stack(
-                      children: [
-                        Align(
-                          alignment: AlignmentDirectional(-0.09, 0.67),
-                          child: FFButtonWidget(
-                            onPressed: () {
-                              print('Button pressed ...');
-                            },
-                            text: FFLocalizations.of(context).getText(
-                              'onfwna0b' /* 
-Get Started */
-                              ,
-                            ),
-                            options: FFButtonOptions(
-                              width: 324.0,
-                              height: 40.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 0.0),
-                              iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 0.0),
-                              color: Color(0x00FF0000),
-                              textStyle: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: 'Meta font ',
-                                    fontWeight: FontWeight.w600,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .bodyMediumFamily),
-                                  ),
-                              elevation: 3.0,
-                              borderSide: BorderSide(
-                                color: Colors.transparent,
-                                width: 1.0,
-                              ),
-                              borderRadius: BorderRadius.circular(8.0),
-                              hoverColor: Colors.black,
-                            ),
-                          ),
-                        ),
-                        Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
-                          child: Text(
-                            FFLocalizations.of(context).getText(
-                              'q1cr3rxw' /* Get Started */,
-                            ),
-                            style: FlutterFlowTheme.of(context)
-                                .labelMedium
-                                .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .labelMediumFamily,
-                                  fontSize: 16.0,
-                                  fontWeight: FontWeight.w500,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .labelMediumFamily),
-                                ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
                 ),
               ],
             ),

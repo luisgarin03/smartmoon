@@ -68,6 +68,8 @@ class _SongDetailsTileWidgetState extends State<SongDetailsTileWidget> {
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(30.0),
                     child: CachedNetworkImage(
+                      fadeInDuration: Duration(milliseconds: 500),
+                      fadeOutDuration: Duration(milliseconds: 500),
                       imageUrl: widget.imageURL!,
                       width: 147.0,
                       height: 185.0,

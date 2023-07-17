@@ -107,9 +107,8 @@ class _MyAppState extends State<MyApp> {
               ),
             )
           : currentUser!.loggedIn
-              ? MainPageWidget()
+              ? HomecleanWidget()
               : GetStartedPageWidget(),
-      navigatorObservers: [routeObserver],
     );
   }
 }

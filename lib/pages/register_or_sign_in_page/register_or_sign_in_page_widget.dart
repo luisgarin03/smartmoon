@@ -52,9 +52,6 @@ class _RegisterOrSignInPageWidgetState
           top: true,
           child: Stack(
             children: [
-              Stack(
-                children: [],
-              ),
               Align(
                 alignment: AlignmentDirectional(-0.5, 0.0),
                 child: FFButtonWidget(

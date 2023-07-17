@@ -92,20 +92,20 @@ class _GetStartedPageWidgetState extends State<GetStartedPageWidget>
               Align(
                 alignment: AlignmentDirectional(0.0, -1.0),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 60.0, 0.0, 0.0),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(0.0),
                     child: Image.asset(
                       'assets/images/APP_(49).png',
-                      width: 300.0,
-                      height: 100.0,
+                      width: 175.0,
+                      height: 65.0,
                       fit: BoxFit.contain,
                     ),
                   ),
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(-0.43, -0.76),
+                alignment: AlignmentDirectional(-0.17, -0.71),
                 child: GradientText(
                   FFLocalizations.of(context).getText(
                     'hgxnooi5' /* Sleep better, live better */,

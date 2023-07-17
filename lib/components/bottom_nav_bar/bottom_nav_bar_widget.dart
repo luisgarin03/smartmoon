@@ -177,6 +177,8 @@ class _BottomNavBarWidgetState extends State<BottomNavBarWidget>
                   });
                 },
                 child: CachedNetworkImage(
+                  fadeInDuration: Duration(milliseconds: 500),
+                  fadeOutDuration: Duration(milliseconds: 500),
                   imageUrl: valueOrDefault<String>(
                     FFAppState().currentIndex == 1
                         ? 'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/spotify-redesign-o39znf/assets/uza6c3dmny5u/a_heart.svg'
@@ -224,6 +226,8 @@ class _BottomNavBarWidgetState extends State<BottomNavBarWidget>
                   });
                 },
                 child: CachedNetworkImage(
+                  fadeInDuration: Duration(milliseconds: 500),
+                  fadeOutDuration: Duration(milliseconds: 500),
                   imageUrl: valueOrDefault<String>(
                     FFAppState().currentIndex == 2
                         ? 'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/spotify-redesign-o39znf/assets/7mp533tq3g7o/a_profile.svg'

@@ -5,13 +5,9 @@ export '/pages/register_or_sign_in_page/register_or_sign_in_page_widget.dart'
     show RegisterOrSignInPageWidget;
 export '/pages/register_page/register_page_widget.dart' show RegisterPageWidget;
 export '/pages/sign_in_page/sign_in_page_widget.dart' show SignInPageWidget;
-export '/pages/main_page/main_page_widget.dart' show MainPageWidget;
-export '/pages/song_details_page/song_details_page_widget.dart'
-    show SongDetailsPageWidget;
 export '/pages/song_lyrics_page/song_lyrics_page_widget.dart'
     show SongLyricsPageWidget;
 export '/pages/user_profile_page/user_profile_page_widget.dart'
     show UserProfilePageWidget;
-export '/pages/main_page_copy/main_page_copy_widget.dart'
-    show MainPageCopyWidget;
 export '/music/music_widget.dart' show MusicWidget;
+export '/pages/homeclean/homeclean_widget.dart' show HomecleanWidget;
