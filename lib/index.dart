@@ -11,3 +11,5 @@ export '/pages/user_profile_page/user_profile_page_widget.dart'
     show UserProfilePageWidget;
 export '/music/music_widget.dart' show MusicWidget;
 export '/pages/homeclean/homeclean_widget.dart' show HomecleanWidget;
+export '/musicplayerpage/musicplayerpage_widget.dart'
+    show MusicplayerpageWidget;

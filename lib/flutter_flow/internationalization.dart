@@ -378,33 +378,33 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'bt9xk646': {
       'en': 'Music',
-      'es': '',
-      'fr': '',
+      'es': 'Música',
+      'fr': 'Musique',
     },
     'o23ekycj': {
       'en': 'Meditation',
-      'es': '',
-      'fr': '',
+      'es': 'Meditación',
+      'fr': 'Méditation',
     },
     'wuzdpzcz': {
       'en': 'Books',
-      'es': '',
-      'fr': '',
+      'es': 'Libros',
+      'fr': 'Livres',
     },
     'hvo09n28': {
       'en': 'Guides',
-      'es': '',
-      'fr': '',
+      'es': 'Guías',
+      'fr': 'Guides',
     },
     'l1n5erm0': {
       'en': 'Products',
-      'es': '',
-      'fr': '',
+      'es': 'productos',
+      'fr': 'Des produits',
     },
     'srf32h82': {
       'en': 'weather',
-      'es': '',
-      'fr': '',
+      'es': 'clima',
+      'fr': 'temps',
     },
     'fm1317fd': {
       'en': 'Music',
@@ -495,6 +495,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'fr': '',
     },
     'tsnke7g1': {
+      'en': 'Home',
+      'es': '',
+      'fr': '',
+    },
+  },
+  // musicplayerpage
+  {
+    'hb2jz4am': {
       'en': 'Home',
       'es': '',
       'fr': '',

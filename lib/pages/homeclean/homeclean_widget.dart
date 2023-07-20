@@ -1,9 +1,16 @@
+import '/auth/firebase_auth/auth_util.dart';
+import '/backend/backend.dart';
+import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_choice_chips.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -17,15 +24,39 @@ class HomecleanWidget extends StatefulWidget {
   _HomecleanWidgetState createState() => _HomecleanWidgetState();
 }
 
-class _HomecleanWidgetState extends State<HomecleanWidget> {
+class _HomecleanWidgetState extends State<HomecleanWidget>
+    with TickerProviderStateMixin {
   late HomecleanModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
+
+  final animationsMap = {
+    'choiceChipsOnActionTriggerAnimation': AnimationInfo(
+      trigger: AnimationTrigger.onActionTrigger,
+      applyInitialState: true,
+      effects: [
+        MoveEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: Offset(0.0, 32.0),
+          end: Offset(-36.0, 0.0),
+        ),
+      ],
+    ),
+  };
 
   @override
   void initState() {
     super.initState();
     _model = createModel(context, () => HomecleanModel());
+
+    setupAnimations(
+      animationsMap.values.where((anim) =>
+          anim.trigger == AnimationTrigger.onActionTrigger ||
+          !anim.applyInitialState),
+      this,
+    );
   }
 
   @override
@@ -452,6 +483,22 @@ class _HomecleanWidgetState extends State<HomecleanWidget> {
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
+                        Switch.adaptive(
+                          value: _model.switchValue ??= true,
+                          onChanged: (newValue) async {
+                            setState(() => _model.switchValue = newValue!);
+                            if (newValue!) {
+                              await queryRecordOnce();
+                            }
+                          },
+                          activeColor: FlutterFlowTheme.of(context).primary,
+                          activeTrackColor:
+                              FlutterFlowTheme.of(context).accent1,
+                          inactiveTrackColor:
+                              FlutterFlowTheme.of(context).alternate,
+                          inactiveThumbColor:
+                              FlutterFlowTheme.of(context).secondaryText,
+                        ),
                         Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 8.0, 0.0, 8.0),
@@ -533,6 +580,9 @@ class _HomecleanWidgetState extends State<HomecleanWidget> {
                                 )
                               ],
                             ),
+                          ).animateOnActionTrigger(
+                            animationsMap[
+                                'choiceChipsOnActionTriggerAnimation']!,
                           ),
                         ),
                       ]
