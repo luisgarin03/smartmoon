@@ -52,11 +52,11 @@ class _MusicplayerpageWidgetState extends State<MusicplayerpageWidget> {
                 child: Container(
                   width: double.infinity,
                   height: 500.0,
-                  child: custom_widgets.AudioPlayerWidget(
+                  child: custom_widgets.AudioPlayerWidge(
                     width: double.infinity,
                     height: 500.0,
                     audioUrl:
-                        'https://www.audiosocket.com/search?query=[{\"key\":\"28985560\",\"value\":\"28985560\",\"type\":\"free\"}]&sort={\"featured\":-1,\"createdAt\":-1}',
+                        'https://soundcloud.com/soothingrelaxation/sleep-music-to-fall-asleep-fast-relaxing-music-stress-relief-sleeping-music-130',
                   ),
                 ),
               ),
